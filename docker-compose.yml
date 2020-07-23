@@ -9,6 +9,10 @@ services:
       GEN_CERT: "yes"
     volumes:
       - scipy-vol:/home/jovyan/work
+  data:
+    image: busybox
+    volumes:
+      - scipy-vol:/work
 volumes:
   scipy-vol:
     external: true
