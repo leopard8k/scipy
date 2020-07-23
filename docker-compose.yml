@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  notebook:
+    image: jupyter/scipy-notebook
+    ports:
+      - "8080:8888"
+    environment:
+      GEN_CERT: "yes"
+    volumes:
+      - scipy-vol:/home/jovyan/work
+volumes:
+  scipy-vol:
+    external: true
+    name: scipy-vol
