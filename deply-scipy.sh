@@ -1,3 +1,3 @@
 #!/bin/sh
 docker-compose up --no-start data
-docker-compose up -d scipy
+docker-compose up -d notebook
