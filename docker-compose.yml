@@ -12,7 +12,7 @@ services:
   data:
     image: kaveh8000/scipy-vol
     volumes:
-      - scipy-vol:/work
+      - scipy-vol:/data
 volumes:
   scipy-vol:
     external: true
